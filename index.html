@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form:</title>
+
+    <h1>Survey Form:</h1>
+    <hr />
+    <form>
+      <h3>YOUR NAME</h3>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" />
+      <h3>Address</h3>
+      <label for="sname">Strret name:</label><br />
+      <input type="text" id="sname" name="sname" /><br />
+      <label for="adln2">Address line 2:</label><br />
+      <input type="text" id="adln2" name="adln2" /><br />
+      <label for="cityname">City name:</label><br />
+      <input type="text" id="cityname" name="cityname" /><br />
+      <label for="statename">State name:</label><br />
+      <input type="text" id="statename" name="statename" /><br />
+
+      <label for="countryname">country name:</label><br />
+      <input list="Country" />
+      <datalist id="country">
+        <option value="Afghanistan"></option>
+        <option value="Australia"></option>
+        <option value="Bangladesh"></option>
+        <option value="Bhutan"></option>
+        <option value="Canada"></option>
+        <option value="China"></option>
+        <option value="Germany"></option>
+        <option value="India"></option>
+        <option value="Pakistan"></option>
+        <option value="Russia"></option>
+        <option value="South Africa"></option>
+        <option value="United Kingdom"></option>
+        <option value="United States"></option>
+      </datalist>
+
+      <br />
+
+      <h3 class="field-head">Contact</h3>
+      <label for="phone">Enter your phone number:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+      />
+      <br />
+      <label for="email">Enter your email id:</label><br />
+      <input type="email" id="email" name="email" />
+
+      <h3>Personal Details</h3>
+      <input type="radio" id="MALE" name="MALE" value="MALE" />
+      <label for="MALE">MALE</label><br />
+      <input type="radio" id="female" name="female" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="other" value="other" />
+      <label for="other">Other</label>
+
+      <h3>Which types of vehicle you own?</h3>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label><br />
+      <input type="checkbox" id="vehicle4" name="vehicle4" value="bicycel" />
+      <label for="vehicle4"> I have a bicycle</label>
+      <br />
+      <br />
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" />
+    </form>
+  </head>
+</html>
